@@ -54,7 +54,7 @@ For instance, rename [root]/assets/images/engine_base to [root]/assets/images/yo
 
 **Replace Strings**
 
-Perform the follow search and replace using Case Sensitivity
+Perform the following search and replace using Case Sensitivity
 
 * engine_base -> [your_namespace]
 
