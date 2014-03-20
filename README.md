@@ -1,5 +1,7 @@
-engine-base
+rails-engine-base
 ===========
+
+# Rails 4.0.4
 
 # What is it
 
