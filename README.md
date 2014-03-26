@@ -19,49 +19,14 @@ One of the great features of engines is the management of namespacing. Basically
 
 In order to facilitate this, certain variables and a number of the directories will be named after your engine namespace.
 
-Below is a list of required updates to establish your namespace:
+To rename your engine, a convenience rake task rename has been provided. From the root of the engine directory, run:
+```$rake app:engine:rename[your_new_underscored_name]```
 
-**Rename Directories**
+If you have already renamed this project before, you must provide a second argument without spaces
 
-Rename each directory named 'engine_base' with the name of [your_namespace]
+```$rake app:engine:rename[your_new_underscored_name,your_old_underscored_name]```
 
-For instance, rename [root]/assets/images/engine_base to [root]/assets/images/your_namespace
-
-* [root]/assets/images/engine_base
-
-* [root]/assets/javascripts/engine_base
-
-* [root]/assets/stylesheets/engine_base
-
-* [root]/controllers/engine_base
-
-* [root]/helpers/engine_base
-
-* [root]/models/engine_base
-
-* [root]/views/layouts/engine_base
-
-* [root]/lib/engine_base
-
-* [root]/spec/models/engine_base
-
-*Pay Special Attention to these paths*
-
-* [root]/lib/engine_base.rb -> [root]/lib/[your_namespace].rb
-
-* [root]/lib/tasks/engine_base_tasks.rake -> [root]/lib/tasks/[your_namespace]_tasks.rake
-
-* [root]/engine_base.gemspec -> [root]/[your_namespace].gemspec
-
-
-**Replace Strings**
-
-Perform the following search and replace using Case Sensitivity
-
-* engine_base -> [your_namespace]
-
-* EngineBase -> [YourNamespace]
-
+This will automatically rename the necessary files and directories, and also substitute all of the underscored and CamelCased uses of the default engine class EngineBase (or YourOldUnderscoredName) to the CamelCased version of your_new_underscored_name (i.e., YourNewUnderscoredName)
 
 **Update your bundle**
 
