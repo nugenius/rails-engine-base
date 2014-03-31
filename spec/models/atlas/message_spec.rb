@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-module EngineBase
+module Atlas
   describe Message do
     it {
 

@@ -1,17 +1,17 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require "engine_base/version"
+require "atlas/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "engine_base"
-  s.version     = EngineBase::VERSION
+  s.name        = "atlas"
+  s.version     = Atlas::VERSION
   s.authors     = ["Richard Nugen"]
   s.email       = ["richard.nugen@gmail.com"]
   s.homepage    = ""
-  s.summary     = "EngineBase"
-  s.description = "EngineBase"
+  s.summary     = "Atlas"
+  s.description = "Atlas"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
 

@@ -1,4 +1,4 @@
-module EngineBase
+module Atlas
   class Message
     include ActiveModel::Validations
     include ActiveModel::Conversion

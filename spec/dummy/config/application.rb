@@ -8,7 +8,7 @@ require "sprockets/railtie"
 # require "rails/test_unit/railtie"
 
 Bundler.require(*Rails.groups)
-require "engine_base"
+require "atlas"
 
 module Dummy
   class Application < Rails::Application
@@ -25,7 +25,7 @@ module Dummy
     # config.i18n.default_locale = :de
     
     config.autoload_paths += %W(
-      #{EngineBase::Engine.root}
+      #{Atlas::Engine.root}
     )
     
   end

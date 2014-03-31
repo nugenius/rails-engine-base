@@ -1,6 +1,6 @@
-module EngineBase
+module Atlas
   class Engine < ::Rails::Engine
-    isolate_namespace EngineBase
+    isolate_namespace Atlas
     
     config.generators do |g|
       g.test_framework :rspec, :view_specs => false, :fixture => false

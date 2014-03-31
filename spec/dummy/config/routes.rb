@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
 
-  mount EngineBase::Engine => "/engine_base"
+  mount Atlas::Engine => "/atlas"
 end

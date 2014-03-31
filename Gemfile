@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-# Declare your gem's dependencies in engine_base.gemspec.
+# Declare your gem's dependencies in atlas.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
 # development dependencies will be added by default to the :development group.
 gemspec
@@ -26,6 +26,42 @@ gemspec
 #  #gem 'webmock', '1.8.11'
 #  #gem 'poltergeist', '1.5.0'
 #end
+
+gem 'jquery-rails', '~> 3.0'
+gem 'coffee-rails', '~> 4.0'
+gem 'sass-rails', '~> 4.0'
+gem 'uglifier', '~> 2.1'
+
+gem 'execjs' # for the asset pipeline
+
+gem 'devise', '>= 3.0', '< 3.1' # server-side authentication
+                                # 3.1 removes token auth
+gem 'bcrypt-ruby', '~> 3.0' # password encryption
+
+gem 'active_model_serializers', '~> 0.7' # json that conforms to ember-data expectation
+gem 'inherited_resources' # for easy api controller scaffolding
+
+gem 'ember-rails', '~> 0.13' # ember framework
+gem 'ember-data-source', '>= 1.0.0.beta.3', '< 2.0' # ember-data not yet out of beta
+gem 'emblem-rails', '~> 0.1' # easier to write templates
+
+gem 'ember-auth-rails', '~> 5.0' # client-side authentication
+gem 'ember-auth-request-jquery-rails', '~> 1.0' # auth requests via jQuery.ajax
+gem 'ember-auth-response-json-rails', '~> 1.0' # responses in json
+gem 'ember-auth-strategy-token-rails', '~> 1.0' # token authentication
+gem 'ember-auth-session-cookie-rails', '~> 1.0' # use cookies
+gem 'ember-auth-module-ember_data-rails', '~> 1.0' # ember-data integration
+gem 'ember-auth-module-auth_redirectable-rails', '~> 1.0' # auth-only routes
+gem 'ember-auth-module-action_redirectable-rails', '~> 1.0' # post- sign in/out redirect
+gem 'ember-auth-module-rememberable-rails', '~> 1.0' # remember me
+
+gem 'bootstrap-sass-rails', '~> 3.0.3.0'
+gem 'select2-rails'
+gem 'snap_js-rails'
+gem 'font-awesome-rails'
+gem 'datetimepicker-rails', :require => 'datetimepicker-rails', :git => 'git://github.com/zpaulovics/datetimepicker-rails.git'
+
+gem 'actionpack-action_caching'
 
 # TODO: Either receive and update to fix this or fork project and fix.
 gem 'validates_formatting_of'

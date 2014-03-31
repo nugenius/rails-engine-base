@@ -1,2 +1,2 @@
-EngineBase::Engine.routes.draw do
+Atlas::Engine.routes.draw do
 end

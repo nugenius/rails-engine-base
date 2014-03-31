@@ -26,7 +26,7 @@ If you have already renamed this project before, you must provide a second argum
 
 ```$rake app:engine:rename[your_new_underscored_name,your_old_underscored_name]```
 
-This will automatically rename the necessary files and directories, and also substitute all of the underscored and CamelCased uses of the default engine class EngineBase (or YourOldUnderscoredName) to the CamelCased version of your_new_underscored_name (i.e., YourNewUnderscoredName)
+This will automatically rename the necessary files and directories, and also substitute all of the underscored and CamelCased uses of the default engine class Atlas (or YourOldUnderscoredName) to the CamelCased version of your_new_underscored_name (i.e., YourNewUnderscoredName)
 
 **Update your bundle**
 

@@ -1,4 +1,4 @@
-module EngineBase
+module Atlas
   module ApplicationHelper
   end
 end

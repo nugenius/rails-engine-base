@@ -11,9 +11,9 @@ namespace :engine do
   task :rename, [:name]  do |t, args|
     #just in case you passed in the CamelCasedVersion instead
     name = args.name.underscore
-    base = "engine_base"
+    base = "atlas"
     
-    # Rename each directory named 'engine_base' with the name of [your_namespace]
+    # Rename each directory named 'atlas' with the name of [your_namespace]
 
     rename "app/assets/images/#{base}", name
 
@@ -33,7 +33,7 @@ namespace :engine do
 
     rename "spec/models/#{base}", name
     
-    # Rename files that include engine_base in the name
+    # Rename files that include atlas in the name
 
     rename "lib/#{base}.rb", "#{name}.rb"
 

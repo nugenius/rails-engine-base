@@ -17,7 +17,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: engine_base_dummy_development
+  database: atlas_dummy_development
   pool: 5
   host: localhost
   username: atlas
@@ -47,7 +47,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: engine_base_dummy_test
+  database: atlas_dummy_test
   pool: 5
   host: localhost
   username: atlas
@@ -56,7 +56,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: engine_base_dummy_production
+  database: atlas_dummy_production
   pool: 5
   host: localhost
   username: atlas
