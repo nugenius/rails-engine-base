@@ -20,8 +20,6 @@ development:
   database: atlas_dummy_development
   pool: 5
   host: localhost
-  username: atlas
-  password: atlas
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -50,8 +48,6 @@ test:
   database: atlas_dummy_test
   pool: 5
   host: localhost
-  username: atlas
-  password: atlas
 
 production:
   adapter: postgresql
@@ -59,5 +55,3 @@ production:
   database: atlas_dummy_production
   pool: 5
   host: localhost
-  username: atlas
-  password: atlas

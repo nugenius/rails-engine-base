@@ -10,4 +10,14 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery
+//= require handlebars
+//= require ember
+//= require ember-data
+//= require_self
+//= require ./atlas
+
+// for more details see: http://emberjs.com/guides/application/
+Atlas = Ember.Application.create();
+
 //= require_tree .

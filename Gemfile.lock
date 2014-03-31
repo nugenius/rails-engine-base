@@ -4,6 +4,20 @@ GIT
   specs:
     datetimepicker-rails (0.0.8)
 
+GIT
+  remote: https://github.com/emberjs/ember-rails.git
+  revision: 6a7c3d6961dd8f0d494bc782e23fa720ba1bdfe3
+  specs:
+    ember-rails (0.14.1)
+      active_model_serializers
+      barber (>= 0.4.1)
+      ember-data-source (>= 1.0.0.beta.5)
+      ember-source (>= 1.1.0)
+      execjs (>= 1.2)
+      handlebars-source (> 1.0.0)
+      jquery-rails (>= 1.0.17)
+      railties (>= 3.1)
+
 PATH
   remote: .
   specs:
@@ -130,15 +144,6 @@ GEM
       ember-source (~> 1.0)
     ember-data-source (1.0.0.beta.7)
       ember-source
-    ember-rails (0.14.1)
-      active_model_serializers
-      barber (>= 0.4.1)
-      ember-data-source
-      ember-source
-      execjs (>= 1.2)
-      handlebars-source
-      jquery-rails (>= 1.0.17)
-      railties (>= 3.1)
     ember-source (1.5.0)
       handlebars-source (~> 1.0)
     emblem-rails (0.2.1)
@@ -281,7 +286,7 @@ DEPENDENCIES
   ember-auth-session-cookie-rails (~> 1.0)
   ember-auth-strategy-token-rails (~> 1.0)
   ember-data-source (>= 1.0.0.beta.3, < 2.0)
-  ember-rails (~> 0.13)
+  ember-rails!
   emblem-rails (~> 0.1)
   execjs
   factory_girl_rails

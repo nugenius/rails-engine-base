@@ -41,7 +41,7 @@ gem 'bcrypt-ruby', '~> 3.0' # password encryption
 gem 'active_model_serializers', '~> 0.7' # json that conforms to ember-data expectation
 gem 'inherited_resources' # for easy api controller scaffolding
 
-gem 'ember-rails', '~> 0.13' # ember framework
+gem 'ember-rails', :git => "https://github.com/emberjs/ember-rails.git" # ember framework
 gem 'ember-data-source', '>= 1.0.0.beta.3', '< 2.0' # ember-data not yet out of beta
 gem 'emblem-rails', '~> 0.1' # easier to write templates
 
