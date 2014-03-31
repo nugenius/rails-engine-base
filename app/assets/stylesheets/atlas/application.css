@@ -8,6 +8,359 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- *= require_self
+ *= require atlas/bootstrap3
+ *= require select2
+ *= require snap
+ *= require font-awesome
+ *= require bootstrap-datetimepicker
+ *= require atlas/datepicker
+ *= require atlas/bootstrap-switch
  *= require_tree .
+ *= require_self
  */
+
+ body {
+ 	padding-top: 50px;
+ 	min-width: 1024px;
+ }
+
+ .container-full {
+   margin: 0 auto;
+   width: 100%;
+   position: relative;
+ }
+
+ .left-bar {
+ 	width: 22%;
+ 	margin: 0;
+ 	padding: 20px 0 0 0;
+ 	min-height: 300px;
+ 	float: left;
+ 	h4 {
+ 		margin-bottom: 4px;
+ 	}
+ }
+
+ .splash-grid {
+ 	margin-top: 120px;
+ }
+
+ .splash-grid img {
+ 	width: 100%;
+ 	height: auto;
+ }
+
+ .left-bar ul {
+ 	margin-right: 15px;
+ }
+
+ .render-map {
+ 	margin-top: -46px;
+ }
+
+ .nav-pills.nav-stacked li a {
+ 	font-size: 1.15em;
+ }
+
+ .nav-pills.nav-stacked li a i {
+ 	margin-right: 6px;
+ }
+
+ .navbar-cavulus .navbar-brand {
+ 	padding:0;
+ 	margin-bottom: -1px;
+ }
+
+ .bootstrap-datetimepicker-widget > ul {
+ 	padding-left: 0;
+ }
+
+ .form-control.inline-input {
+ 	width: 50px;
+ 	display: inline;
+ 	margin: 0 6px 0 2px;
+ }
+
+ .main-pane {
+ 	width: 78%;
+ 	margin:0;
+ 	padding:0;
+ 	background: #fff;
+ 	min-height: 300px;
+ 	float: left;
+ 	.pane-inner {
+ 		padding: 20px;
+ 	}
+ }
+
+ li.picker-switch {
+   background: rgb(71, 196, 232);
+   padding: 12px 0;
+   border-radius: 4px;
+   a i {
+     color: #fff;
+     font-size: 20px;
+   }
+   a:hover {
+     text-decoration: none;
+   }
+ }
+
+ h2.pane-header {
+ 	margin-top: -1px;
+ }
+
+ #select-organizations {
+ 	width: 200px;
+ }
+
+ .select2-container {
+ 	width: 100%;
+ }
+
+ .select2-drop.select2-drop-multi {
+ 	margin-top: -3px;
+ }
+
+ .select2-container-multi .select2-choices {
+ 	border: 1px solid rgb(204, 204, 204);
+ 	border-radius: 4px;
+ }
+
+ .nav.nav-stacked > li > a:hover, .nav.nav-stacked  > li > a:focus {
+ 	text-decoration: none;
+ 	background-color: rgb(223, 243, 255);
+ 	text-shadow: 0px 1px 0px rgb(255, 255, 255);
+ }
+
+ .navbar-cavulus > li > a:hover, .nav > li > a:focus {
+ 	text-decoration: none;
+ 	background-color: rgba(255,255,255,0.12);
+ 	text-shadow: 0px 1px 1px rgb(2,65,103);
+ }
+
+ .nav > li > a:hover, .nav > li > a:focus {
+ 	background-color: rgba(255,255,255,0.12);
+ }
+
+ .nav a {
+ 	cursor:pointer;
+ }
+
+ a.navbar-brand {
+ 	color: #fff;
+ }
+
+ .navbar a.navbar-brand.active {
+ 	background-color: transparent;
+ }
+
+ h2.pane-header.head-space {
+ 	margin-top: 16px;
+ }
+
+ .navbar-cavulus {
+ 	background-color: rgb(66,139,202);
+ 	border-color: rgb(29,95,153);
+ 	box-shadow: inset 0px -4px 12px rgba(3, 60, 95, 0.4);
+ 	font-size: 13px;
+ }
+
+ .navbar-cavulus-subnav {
+ 	background-color: rgb(246, 160, 26);
+ 	margin-top: 18px;
+ 	box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.3);
+ 	border-bottom-width: 0;
+ }
+
+ .navbar-cavulus-subnav .btn-default {
+ 	background: #033C5F;
+ 	border: 1px solid #003352;
+ }
+
+ .navbar-cavulus-subnav .btn-default:hover {
+ 	color: #fff;
+ }
+
+ .navbar-cavulus-subnav .btn-default.pull-right {
+ 	margin-right: 8px;
+ }
+
+ .right-bar {
+ 	margin-top: 58px;
+ 	overflow-x: hidden;
+ 	overflow-y: scroll;
+ 	border-bottom: 1px solid #e5e5e5;
+ }
+ .map-pane {
+ 	position: relative;
+ }
+
+ .navbar-nav > li > a, .navbar-nav > li > a:hover {
+ 	color: #fff;
+ }
+
+ .navbar-sign-in input[type="password"], .navbar-sign-in input[type="text"], .navbar-sign-in input[type="email"] {
+ 	float: left;
+ 	border-radius: 4px;
+ 	border: 1px solid #e5e5e5;
+ }
+
+ .navbar-sign-in input[type="password"] {
+ 	margin-bottom: 0;
+ }
+
+ .remember-me-check {
+ 	color: #666666;
+ 	float: left;
+ 	line-height: 36px;
+ }
+
+ .sign-in-drop {
+ 	margin-top: 3px;
+ }
+
+ .sign-in-drop .dropdown-menu {
+ 	left: auto;
+ 	right: 0;
+ 	width: 220px;
+ }
+
+ .sign-in-drop .ember-text-field {
+ 	width: 188px;
+ 	margin-bottom: 10px;
+ 	height: 37px;
+ 	padding: 6px;
+ 	line-height: 17px;
+ 	margin-bottom: 0;
+ 	margin-top: 12px;
+ }
+
+ #sign-in-modal.modal {
+ 	top: 50px;
+ }
+
+ #sign-in-modal:focus {
+ 	outline: 0;
+ }
+
+ #sign-in-modal .modal-content {
+ 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.21);
+ }
+
+ #sign-in-modal input[type=checkbox] {
+ 	margin-left: 6px;
+ }
+
+ .sign-in-drop .ember-text-field[type=checkbox] {
+ 	height: 14px;
+ 	float: left;
+ 	width: auto;
+ 	margin-right: 3px;
+ }
+ .navbar-sign-in label {
+ 	display: none;
+ }
+
+ .navbar-sign-in input.ember-text-field[type=email] {
+ 	margin-top: 0;
+ }
+
+ .user-utilities {
+ 	height: 30px;
+ 	color: #fff;
+ 	position: absolute;
+ 	right: 14px;
+ 	top: 9px;
+ 	font-size: 12px;
+ }
+
+ .user-utilities button {
+ 	margin-top: -2px;
+ 	float: right;
+ 	display: block;
+ 	margin-left: 8px;
+ }
+
+ .user-utilities button.dropdown-toggle {
+ 	margin-top: -5px;
+ }
+
+ .user-utilities button.btn-primary {
+ 	float: left;
+ 	margin-left: 0;
+ }
+
+ .user-utilities form {
+ 	line-height: 10px;
+ 	color: rgb(215, 236, 255);
+ }
+
+ iframe[name=report] {
+ 	border-width: 0;
+ }
+
+ .navbar a {
+ 		color: #fff;
+ 		text-shadow: 0px 1px 1px rgb(1,49,78);
+ }
+
+ .navbar a.active {
+ 	background-color: rgb(3, 60, 95);
+ }
+
+ .navbar .user-utilities a.active, .navbar .user-utilities a.active:hover, .navbar .user-utilities a:hover {
+ 	background-color: transparent;
+ }
+
+ .navbar a.active:hover {
+ 	background-color: rgb(0,49,78);
+ }
+
+ .signed-in-email {
+ 	line-height: 10px;
+ 	display: block;
+ 	clear: right;
+ 	float: left;
+ 	margin-right: 8px;
+ }
+
+ .utility-links {
+ 	float: left;
+ 	line-height: 38px;
+ 	float: left;
+ 	line-height: 10px;
+ 	padding: 0;
+ }
+
+ .utility-links a {
+ 	line-height: 30px;
+ 	margin: 0;
+ }
+
+ .btn.btn-cavulus {
+ 	background: rgb(246, 160, 26);
+ 	border: 2px solid rgb(246, 220, 26);
+ 	color: rgb(255, 255, 255);
+ 	text-shadow: 0px 1px 1px rgb(56, 34, 0);
+ 	box-shadow: 0px 2px 3px rgb(0, 77, 129);
+ 	cursor: pointer;
+ 	font-weight: bold;
+ 	letter-spacing: 0.03em;
+ }
+
+ .btn.btn-cavulus-white {
+ 	background: rgb(246, 160, 26);
+ 	border: 2px solid rgb(246, 220, 26);
+ 	color: rgb(255, 255, 255);
+ 	text-shadow: 0px 1px 2px rgb(56, 34, 0);
+ 	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2), 0px 2px 1px 0px rgba(0, 0, 0, 0.3);
+ 	cursor: pointer;
+ 	font-weight: bold;
+ 	letter-spacing: 0.03em;
+ }
+
+ .btn.btn-cavulus:active, .btn.btn-cavulus:focus, .btn.btn-cavulus-white:active, .btn.btn-cavulus-white:focus {
+ 	outline: none;
+ }
+

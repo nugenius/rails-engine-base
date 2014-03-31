@@ -12,12 +12,26 @@
 //
 //= require jquery
 //= require handlebars
+//= require jquery_ujs
+//= require twitter/bootstrap
 //= require ember
 //= require ember-data
+//= require select2
+//= require snap
+//= require atlas/bootstrap-switch
+//= require atlas/spin
+//= require bootstrap-datetimepicker/core
 //= require_self
 //= require ./atlas
 
 // for more details see: http://emberjs.com/guides/application/
-Atlas = Ember.Application.create();
+Atlas = Ember.Application.create({LOG_ACTIVE_GENERATION: true,
+LOG_VIEW_LOOKUPS: true, 
+      Resolver: Ember.DefaultResolver.extend({
+          resolveTemplate: function(parsedName) {
+            parsedName.fullNameWithoutType = "atlas/" + parsedName.fullNameWithoutType;
+            return this._super(parsedName);
+          }
+      })});
 
 //= require_tree .

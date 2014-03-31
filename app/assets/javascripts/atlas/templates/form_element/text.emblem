@@ -1,0 +1,4 @@
+.form-group
+  label for=name
+  	= content.label
+  input.form-control type="email" id=name placeholder=content.placeholder

@@ -1,0 +1,3 @@
+div class="col-md-{{unbound content.width}} col-sm-{{unbound content.width}} col-lg-{{unbound content.width}}" id=name
+	each child in content.children
+	  == tree-render name=child elements=elements

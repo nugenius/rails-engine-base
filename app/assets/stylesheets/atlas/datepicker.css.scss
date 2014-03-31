@@ -1,0 +1,38 @@
+.datepicker td.active,
+.datepicker td.active:hover {
+  background-color: rgb(71, 196, 232);
+  background-image: none;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.datepicker td.active:hover,
+.datepicker td.active:hover:hover,
+.datepicker td.active:focus,
+.datepicker td.active:hover:focus,
+.datepicker td.active:active,
+.datepicker td.active:hover:active,
+.datepicker td.active.active,
+.datepicker td.active:hover.active,
+.datepicker td.active.disabled,
+.datepicker td.active:hover.disabled,
+.datepicker td.active[disabled],
+.datepicker td.active:hover[disabled] {
+  color: #ffffff;
+  background-color: rgb(71, 196, 232);
+}
+.datepicker td span.active {
+  background-color: rgb(71, 196, 232);
+  background-image: none;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.datepicker td span.active:hover,
+.datepicker td span.active:focus,
+.datepicker td span.active:active,
+.datepicker td span.active.active,
+.datepicker td span.active.disabled,
+.datepicker td span.active[disabled] {
+  color: #ffffff;
+  background-color: rgb(71, 196, 232);
+  *background-color: rgb(71, 196, 232);
+}

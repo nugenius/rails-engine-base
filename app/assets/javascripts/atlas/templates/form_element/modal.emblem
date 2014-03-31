@@ -1,0 +1,19 @@
+button.btn.btn-primary.btn-lg type="button" data-toggle="modal" data-target=dataTarget
+  = content.label
+
+.modal.fade id=name tabindex="-1" role="dialog" aria-labelledby="{{unbound name}}Label" aria-hidden="true"
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button.close type="button" data-dismiss="modal" aria-hidden="true"
+          | &times;
+        h4.modal-title id="{{unbound name}}Label"
+          = content.title
+      .modal-body
+        each child in content.children
+          == tree-render name=child elements=elements
+      .modal-footer
+        button.btn.btn-default type="button" data-dismiss="modal"
+          | Close
+        button.btn.btn-primary type="button" 
+          | Save changes

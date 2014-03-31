@@ -1,0 +1,4 @@
+.container-fluid id=name
+  each child in content.children
+    == tree-render name=child elements=elements
+  

@@ -1,0 +1,4 @@
+.container id=name
+  h2 = content.label
+  each child in content.children
+    == tree-render elements=elements name=child

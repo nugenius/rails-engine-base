@@ -29,7 +29,7 @@ gemspec
 
 gem 'jquery-rails', '~> 3.0'
 gem 'coffee-rails', '~> 4.0'
-gem 'sass-rails', '~> 4.0'
+gem 'sass-rails', '~> 4.0.2'
 gem 'uglifier', '~> 2.1'
 
 gem 'execjs' # for the asset pipeline
@@ -44,16 +44,6 @@ gem 'inherited_resources' # for easy api controller scaffolding
 gem 'ember-rails', :git => "https://github.com/emberjs/ember-rails.git" # ember framework
 gem 'ember-data-source', '>= 1.0.0.beta.3', '< 2.0' # ember-data not yet out of beta
 gem 'emblem-rails', '~> 0.1' # easier to write templates
-
-gem 'ember-auth-rails', '~> 5.0' # client-side authentication
-gem 'ember-auth-request-jquery-rails', '~> 1.0' # auth requests via jQuery.ajax
-gem 'ember-auth-response-json-rails', '~> 1.0' # responses in json
-gem 'ember-auth-strategy-token-rails', '~> 1.0' # token authentication
-gem 'ember-auth-session-cookie-rails', '~> 1.0' # use cookies
-gem 'ember-auth-module-ember_data-rails', '~> 1.0' # ember-data integration
-gem 'ember-auth-module-auth_redirectable-rails', '~> 1.0' # auth-only routes
-gem 'ember-auth-module-action_redirectable-rails', '~> 1.0' # post- sign in/out redirect
-gem 'ember-auth-module-rememberable-rails', '~> 1.0' # remember me
 
 gem 'bootstrap-sass-rails', '~> 3.0.3.0'
 gem 'select2-rails'

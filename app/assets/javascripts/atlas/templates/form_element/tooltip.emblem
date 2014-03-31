@@ -1,0 +1,2 @@
+.btn.btn-default.tooltip-init data-toggle="tooltip" data-placement="{{unbound content.placement}}" title=content.body
+	= content.label

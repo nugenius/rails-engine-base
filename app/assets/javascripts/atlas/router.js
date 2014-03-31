@@ -2,4 +2,6 @@
 
 Atlas.Router.map(function() {
   // this.resource('posts');
+  this.route("cfe")
+  this.route("sife")
 });
