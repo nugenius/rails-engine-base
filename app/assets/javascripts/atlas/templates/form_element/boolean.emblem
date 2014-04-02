@@ -1,5 +1,5 @@
 .form-group.toggle-group
   label = content.label
   span Off
-  input.switch-large type="checkbox" checked="checked" data-label-icon="icon-fullscreen" data-on-label="<i class='icon-ok icon-white'></i>" data-off-label="<i class='icon-remove'></i>" id=name
+  input.switch-large.toggle-boolean-init type="checkbox" checked="checked" data-label-icon="icon-fullscreen" data-on-label="<i class='icon-ok icon-white'></i>" data-off-label="<i class='icon-remove'></i>" id=name
   span On

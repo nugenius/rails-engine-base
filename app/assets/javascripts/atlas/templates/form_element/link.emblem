@@ -1,0 +1,6 @@
+a href=content.src
+  if content.children
+    each child in content.children
+      == tree-render name=child elements=elements
+  else
+    content.label

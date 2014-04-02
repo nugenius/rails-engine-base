@@ -1,3 +1,12 @@
+Atlas.IndexView = Em.View.extend({
+  didInsertElement: function() {
+    $('.tooltip-init').tooltip();
+    $('.toggle-init').bootstrapSwitch();
+    $('.toggle-boolean-init').bootstrapSwitch({
+      boolean: true
+    });
+  }
+})
 Atlas.IndexController = Em.Controller.extend({
   form: {
     name: "test-form",
@@ -6,7 +15,21 @@ Atlas.IndexController = Em.Controller.extend({
       'test-form': {
         element_type: 'form',
         label: 'I am an awesome form',
-        children: ['row0', 'row1', 'row2']
+        children: ['alephrow', 'row0', 'row1', 'row2']
+      },
+      'alephrow': {
+        element_type: 'row',
+        children: ['c1', 'c2']
+      },
+      'c1': {
+        element_type: 'column',
+        width: 6,
+        children: ['image1']
+      },
+      'c2': {
+        element_type: 'column',
+        width: 6,
+        children: ['link2']
       },
       'row0': {
         element_type: 'row',
@@ -20,7 +43,7 @@ Atlas.IndexController = Em.Controller.extend({
       'bcol': {
         element_type: 'column',
         width: 6,
-        children: ['html_display1', 'modal1']
+        children: ['html_display1', 'modal1', 'link1']
       },
       'row1': {
         element_type: 'row',
@@ -110,6 +133,21 @@ Atlas.IndexController = Em.Controller.extend({
         title: "What a sweet modal",
         element_type: 'modal',
         children: ['html_display1']
+      },
+      'image1': {
+        src: "http://www.mtosmt.org/issues/mto.10.16.1/tymoczko_fig3a.gif",
+        label: "This is an image of a hexatonic cycle",
+        element_type: 'image'
+      },
+      'link1': {
+        src: "http://emblemjs.com/syntax",
+        label: "Emblem.js Syntax Tutorial",
+        element_type: 'link'
+      },
+      'link2': {
+        src: "http://www.mtosmt.org/",
+        element_type: 'link',
+        children: ['image1']
       }
     }
   }

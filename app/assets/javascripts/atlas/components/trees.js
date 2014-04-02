@@ -9,13 +9,5 @@ Atlas.TreeRenderComponent = Ember.Component.extend({
     var element = this.get('elements')[this.get('name')] || {};
     this.set('content', element);
     return "form_element/"+(element.element_type || "form")
-  }.property(),
-  didInsertElement: function() {
-    $('.tooltip-init').tooltip();
-    $('.toggle').bootstrapSwitch({
-    });
-    $('.toggle-boolean').bootstrapSwitch({
-      boolean: true
-    });
-  }
+  }.property()
 });
