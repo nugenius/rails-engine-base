@@ -1,0 +1,1 @@
+BaseEngine::Engine.load_seed
